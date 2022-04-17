@@ -37,10 +37,12 @@ let users9 = [
     {id: 3, name: "Jon", age: 5}
 ];
 
-let names = [];
-users9.forEach( function (element) {
-    names.push(element.name); }
-);
+let names = users9.map((item)=>item.name)
+
+//let names = [];
+// users9.forEach( function (element) {
+//    names.push(element.name); }
+//);
 
 console.log(names);
 
@@ -61,12 +63,12 @@ filterRangeInPlace(array10, 2, 6)
 
 console.log('------------- #11')
 let result11
-function preobrazowanie(a,b){
+function transformation(a,b){
     result11 = a.split(b);
 }
 
 let string11 = 'String for exersice 11';
-preobrazowanie(string11, ' ')
+transformation(string11, ' ')
 console.log(result11);   //в завданні не вказано, що массив повинен виводитись в консоль, лише повертатись. Цей рядок для того щоб перевірити , що фунція працює
 
 
